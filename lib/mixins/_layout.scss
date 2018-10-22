@@ -29,15 +29,15 @@
    # ================================================================= */
 
 @mixin padding($top, $right, $bottom, $left) {
-  padding-top: $top;
-  padding-right: $right;
-  padding-bottom: $bottom;
-  padding-left: $left;
+  padding-top: rem($top);
+  padding-right: rem($right);
+  padding-bottom: rem($bottom);
+  padding-left: rem($left);
 }
 
 @mixin margin($top, $right, $bottom, $left) {
-  margin-top: $top;
-  margin-right: $right;
-  margin-bottom: $bottom;
-  margin-left: $left;
+  margin-top: rem($top);
+  margin-right: rem($right);
+  margin-bottom: rem($bottom);
+  margin-left: rem($left);
 }

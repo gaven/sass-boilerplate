@@ -3,7 +3,11 @@
    # ================================================================= */
 
 @function rem($size) {
-  $remSize: $size / 16;
-  @return #{$remSize}rem;
+  @if ($size) {
+    $remSize: $size / 16;
+    @return #{$remSize}rem;
+  } @else {
+    @return null;
+  }
 }
 
