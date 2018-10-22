@@ -1,0 +1,23 @@
+/* # =================================================================
+   # Keep your elements centered 
+   # Much zen bruh
+   # ================================================================= */
+
+@mixin center {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+@mixin v-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin h-center {
+  position: absolute;
+  right: 50%;
+  transform: translateX(-50%);
+}

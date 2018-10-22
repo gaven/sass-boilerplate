@@ -1,0 +1,24 @@
+{
+  "name": "sass-boilerplate",
+  "version": "1.0.0",
+  "description": "Sass utilities",
+  "license": "MIT",
+  "main": "index.scss",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "dependencies": {
+    "include-media": "1.4.9",
+    "rfs": "^7.1.4"
+  },
+  "devDependencies": {
+    "node-sass-package-importer": "^5.2.0",
+    "parcel-bundler": "^1.10.3"
+  },
+  "peerDependencies": {
+    "node-sass": "^4.9.4"
+  }
+}

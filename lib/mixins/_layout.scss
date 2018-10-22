@@ -1,0 +1,43 @@
+/* # =================================================================
+   # Global container class
+   # ================================================================= */
+
+@mixin container ($max-width: 1366px) {
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+/* # =================================================================
+   # Flex that sass
+   # ================================================================= */
+
+@mixin flex-container($justify: flex-start) {
+  display: flex;
+  justify-content: $justify;
+}
+
+@mixin flex-child($fraction) {
+  flex: 0 1 $fraction * 100%;
+}
+
+@mixin flex-grow {
+  flex: 1 1 auto;
+}
+
+/* # =================================================================
+   # Padding, margins, etc...
+   # ================================================================= */
+
+@mixin padding($top, $right, $bottom, $left) {
+  padding-top: $top;
+  padding-right: $right;
+  padding-bottom: $bottom;
+  padding-left: $left;
+}
+
+@mixin margin($top, $right, $bottom, $left) {
+  margin-top: $top;
+  margin-right: $right;
+  margin-bottom: $bottom;
+  margin-left: $left;
+}

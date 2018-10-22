@@ -1,0 +1,23 @@
+/* # =================================================================
+   # Lets make some shapes
+   # ================================================================= */
+
+@mixin rectangle($width, $height, $color: null, $radius: null) {
+  width: $width;
+  height: $height;
+  @if $color {
+    background: $color;
+  }
+
+  @if $radius {
+    border-radius: $radius;
+  }
+}
+
+@mixin square($size, $color: null, $radius: null) {
+  @include rectangle($size, $size, $color, $radius);
+}
+
+@mixin circle($size, $color: null) {
+  @include rectangle($size, $size, $color, $size/2);
+}
