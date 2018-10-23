@@ -1,6 +1,9 @@
-@import "lib/boilerplate";
-@import "~rfs/scss/rfs";
-@import "~include-media/dist/include-media";
+/* # =================================================================
+   # Packages from npm
+   # ================================================================= */
+
+@import "node_modules/rfs/scss/rfs";
+@import "node_modules/include-media/dist/include-media";
 
 /* # =================================================================
    # Some helpful mixins
