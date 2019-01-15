@@ -1,7 +1,7 @@
 {
   "name": "sass-boilerplate",
   "version": "1.0.0",
-  "description": "Sass utilities",
+  "description": "A collection of sass utilities",
   "license": "MIT",
   "main": "index.scss",
   "scripts": {
@@ -11,12 +11,10 @@
     "sass"
   ],
   "dependencies": {
-    "include-media": "1.4.9"
+    "include-media": "1.4.9",
+    "sass-rem": "^2.0.1"
   },
-  "devDependencies": {
-    "parcel-bundler": "^1.10.3",
-    "sass": "^1.14.3"
-  },
+  "devDependencies": {},
   "peerDependencies": {
     "node-sass": "^4.9.4"
   }

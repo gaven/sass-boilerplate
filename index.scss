@@ -2,10 +2,10 @@
    # Packages from npm
    # ================================================================= */
 
-@import "node_modules/include-media/dist/include-media";
-
+@import "~include-media/dist/include-media";
+@import "~sass-rem";
 /* # =================================================================
-   # Some helpful mixins
+   # Mixins
    # ================================================================= */
 
 @import "lib/mixins/shapes";
@@ -15,16 +15,17 @@
 @import "lib/mixins/layout";
 
 /* # =================================================================
-   # Some helpful functions
+   # Functions
    # ================================================================= */
 
-@import "lib/functions/size";
+@import "lib/functions/utils";
 
 /* # =================================================================
    # Variables
    # ================================================================= */
 
 @import "lib/variables/layout";
+@import "lib/variables/easing";
 
 /* # =================================================================
    # Utility classes

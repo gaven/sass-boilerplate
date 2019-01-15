@@ -28,20 +28,6 @@
    # Padding, margins, etc...
    # ================================================================= */
 
-@mixin padding($top, $right, $bottom, $left) {
-  padding-top: rem($top);
-  padding-right: rem($right);
-  padding-bottom: rem($bottom);
-  padding-left: rem($left);
-}
-
-@mixin margin($top, $right, $bottom, $left) {
-  margin-top: rem($top);
-  margin-right: rem($right);
-  margin-bottom: rem($bottom);
-  margin-left: rem($left);
-}
-
 @mixin mq-values(
   $property,
   $max-value,
@@ -49,7 +35,7 @@
   $max-width: 1440px,
   $min-width: 500px,
   $steps: 6) {
-  #{property}: $max-value;
+  #{$property}: $max-value;
 
   @for $i from 0 through $steps {
     $break: $max-width - floor(($max-width - $min-width) * $i / ($steps - 1));
