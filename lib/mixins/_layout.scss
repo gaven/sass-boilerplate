@@ -25,7 +25,7 @@
 }
 
 /* # =================================================================
-   # Padding, margins, etc...
+   # Scale a value, yo
    # ================================================================= */
 
 @mixin mq-values(
@@ -48,4 +48,20 @@
       #{$property}: $max-value - (($max-value - $min-value) * ($i + 1) / $steps);
     }
   }
+}
+
+/* # =================================================================
+   # Get actual mobile size - scale taken into account
+   # ================================================================= */
+
+@mixin scaled-size($property, $value, $percentage: 80%) {
+  $base-font-size: 16px;
+
+  $remaining-percentage: 100 - strip-unit($percentage);
+
+  $size: strip-unit($value);
+
+  $scaled-size: ((($remaining-percentage / 100) * $size) + $size) / strip-unit($base-font-size);
+
+  #{$property}: #{$scaled-size}rem;
 }
