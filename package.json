@@ -12,6 +12,7 @@
   ],
   "dependencies": {
     "include-media": "1.4.9",
+    "modern-normalize": "^0.5.0",
     "sass-rem": "^2.0.1"
   },
   "devDependencies": {},
