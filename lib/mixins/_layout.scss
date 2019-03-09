@@ -2,7 +2,7 @@
    # Global container class
    # ================================================================= */
 
-@mixin container ($max-width: 1366px) {
+@mixin container($max-width: 1366px) {
   max-width: $max-width;
   margin: 0 auto;
 }
@@ -34,7 +34,8 @@
   $min-value,
   $max-width: 1440px,
   $min-width: 500px,
-  $steps: 6) {
+  $steps: 6
+) {
   #{$property}: $max-value;
 
   @for $i from 0 through $steps {
@@ -61,7 +62,8 @@
 
   $size: strip-unit($value);
 
-  $scaled-size: ((($remaining-percentage / 100) * $size) + $size) / strip-unit($base-font-size);
+  $scaled-size: ((($remaining-percentage / 100) * $size) + $size) /
+    strip-unit($base-font-size);
 
   #{$property}: #{$scaled-size}rem;
 }
