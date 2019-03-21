@@ -28,7 +28,7 @@
 
   &:before {
     display: block;
-    content: '';
+    content: "";
     width: 100%;
     padding-top: $aspect * 100%;
   }
@@ -41,4 +41,3 @@
     bottom: 0;
   }
 }
-

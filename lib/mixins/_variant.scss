@@ -2,10 +2,10 @@
    # Generate class variants
    # ================================================================= */
 
-  @mixin variant ($map, $property) {
-    @each $key, $value in $map {
-      &-#{$key} {
-        #{property}: #{value};
-      }
+@mixin variant($map, $property) {
+  @each $key, $value in $map {
+    &-#{$key} {
+      #{property}: #{value};
     }
   }
+}

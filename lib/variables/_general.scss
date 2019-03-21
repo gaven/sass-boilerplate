@@ -1,10 +1,5 @@
 /* # =================================================================
-   # Overrides for include-media
+   # General variables
    # ================================================================= */
 
-$breakpoints: (
-  "tablet": 600px,
-  "desktop": 900px,
-  "large": 1200px,
-  "x-large": 1800px
-) !default;
+$base-url: "/assets/" !default;
