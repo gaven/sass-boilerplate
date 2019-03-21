@@ -2,34 +2,34 @@
    # Packages from npm
    # ================================================================= */
 
-@import "~include-media/dist/include-media";
-@import "~sass-rem";
+@import 'node_modules/include-media/dist/include-media';
+@import 'node_modules/sass-rem';
 
 /* # =================================================================
    # Mixins
    # ================================================================= */
 
-@import "lib/mixins/shapes";
-@import "lib/mixins/variant";
-@import "lib/mixins/cover";
-@import "lib/mixins/center";
-@import "lib/mixins/layout";
+@import 'lib/mixins/shapes';
+@import 'lib/mixins/variant';
+@import 'lib/mixins/cover';
+@import 'lib/mixins/center';
+@import 'lib/mixins/layout';
 
 /* # =================================================================
    # Functions
    # ================================================================= */
 
-@import "lib/functions/utils";
+@import 'lib/functions/utils';
 
 /* # =================================================================
    # Variables
    # ================================================================= */
 
-@import "lib/variables/layout";
-@import "lib/variables/easing";
+@import 'lib/variables/layout';
+@import 'lib/variables/easing';
 
 /* # =================================================================
    # Utility classes
    # ================================================================= */
 
-@import "lib/utils/type";
+@import 'lib/utils/type';
