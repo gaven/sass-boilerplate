@@ -6,9 +6,5 @@
   "main": "index.scss",
   "keywords": [
     "sass"
-  ],
-  "dependencies": {
-    "include-media": "1.4.9",
-    "sass-rem": "^2.0.1"
-  }
+  ]
 }
