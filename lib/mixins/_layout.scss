@@ -67,3 +67,45 @@
 
   #{$property}: #{$scaled-size}rem;
 }
+
+/* # =================================================================
+   # Lerp between two sizes for better responsive sizing
+   # ================================================================= */
+
+@mixin fluid(
+  $property,
+  $max-size,
+  $min-size: null,
+  $max-scale-width: 1680,
+  $min-scale-width: 375) {
+
+  $auto-min-size-factor: 0.5;
+
+  $min-scale-width-px: $min-scale-width * 1px;
+  $max-scale-width-px: $max-scale-width * 1px;
+
+  $min-size-px: $min-size * 1px;
+  $max-size-px: $max-size * 1px;
+
+  $size: $max-size - $min-size;
+  $width: $max-scale-width - $min-scale-width;
+
+  @if $min-size != null {
+    #{$property}: calc(#{$min-size-px} + #{$size} / #{$width} * (100vw - #{$min-scale-width-px}));
+  } @else {
+    #{$property}: calc(#{$max-size-px} * #{$auto-min-size-factor} + (#{$max-size} - #{$max-size} * #{$auto-min-size-factor})/(#{$max-scale-width} - #{$min-scale-width}) * (100vw - #{$min-scale-width}));
+  }
+
+  @media(max-width: $min-scale-width-px) {
+    @if $min-size != null {
+      #{$property}: $min-size-px;
+    } @else {
+      #{$property}: calc(#{$max-size-px} * #{$auto-min-size-factor});
+    }
+  }
+
+  @media(min-width: $max-scale-width-px) {
+    #{$property}: $max-size-px;
+  }
+}
+
