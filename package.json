@@ -4,18 +4,7 @@
   "description": "A collection of sass utilities",
   "license": "MIT",
   "main": "index.scss",
-  "scripts": {
-    "start": "parcel index.html"
-  },
   "keywords": [
     "sass"
-  ],
-  "dependencies": {
-    "include-media": "1.4.9",
-    "sass-rem": "^2.0.1"
-  },
-  "devDependencies": {},
-  "peerDependencies": {
-    "node-sass": "^4.9.4"
-  }
+  ]
 }
