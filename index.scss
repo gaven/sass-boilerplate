@@ -2,7 +2,8 @@
    # Third party libraries
    # ================================================================= */
 
-@import 'lib/vendor/sass-rem';
+@import "~include-media/dist/_include-media";
+@import "~sass-rem";
 
 /* # =================================================================
    # Mixins
